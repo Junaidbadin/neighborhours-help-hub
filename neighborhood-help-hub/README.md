@@ -1,28 +1,52 @@
-# Neighborhood Help Hub - Local Development Setup
+# Neighborhood Help Hub
 
-## ✅ All Issues Fixed - Ready for Local Development!
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
-This application now uses **local MongoDB** instead of cloud database. All errors have been fixed and the application is ready to run on your laptop.
+Neighborhood Help Hub is a MERN (MongoDB, Express.js, React, Node.js) application designed to help residents of a neighborhood connect, share resources, and seek assistance efficiently. This platform allows users to create profiles, chat with neighbors, post help requests, and manage local community tasks.
 
-## 🚀 Quick Start
+---
 
-### Prerequisites
-- Node.js installed on your system
-- MongoDB installed locally (see installation guide below)
+## Table of Contents
 
-### 1. Install MongoDB
+- [Features](#features)
+- [Technologies](#technologies)
+- [Installation](#installation)
+- [Configuration](#configuration)
+- [Usage](#usage)
+- [Folder Structure](#folder-structure)
+- [License](#license)
+- [Contributing](#contributing)
+- [Author](#author)
 
-**Download and install MongoDB Community Edition:**
-- Website: https://www.mongodb.com/try/download/community
-- Platform: Select your operating system (Windows/Mac/Linux)
-- Version: Download the latest stable version
-- Install and start as a service
+---
 
-**Verify installation:**
+## Features
+
+- User registration and authentication
+- Profile management with image and description
+- Real-time chat between neighbors
+- Admin panel for managing users and posts
+- Neighborhood resource posting and request system
+- Notifications for new messages and updates
+
+---
+
+## Technologies
+
+- **Frontend:** React.js, HTML5, CSS3, JavaScript  
+- **Backend:** Node.js, Express.js  
+- **Database:** MongoDB (Atlas / Compass)  
+- **Other:** Axios, JWT, bcrypt, Socket.io (for chat functionality)
+
+---
+
+## Installation
+
+1. **Clone the repository**
+
 ```bash
-mongod --version
-```
-
+git clone https://github.com/Junaidbadin/neighborhours-help-hub.git
+cd neighborhours-help-hub
 ### 2. Install Dependencies & Run
 
 **Server (Terminal 1):**
@@ -81,26 +105,7 @@ neighborhood-help-hub/
 └── SETUP_COMPLETE.md      # Setup instructions
 ```
 
-## 🗄️ Database
 
-The application uses **local MongoDB** at:
-```
-mongodb://localhost:27017/neighborhood-help-hub
-```
-
-Database and collections are created automatically when you:
-1. Install MongoDB
-2. Start the MongoDB service
-3. Run the server for the first time
-
-## 💾 File Uploads
-
-User uploads (profile pictures, post images) are stored in:
-```
-server/uploads/
-```
-
-This directory is created automatically when first upload is made.
 
 ## 📝 Environment Variables
 
